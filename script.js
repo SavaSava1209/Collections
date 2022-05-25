@@ -3,6 +3,7 @@ let quoteText = document.getElementById('quote');
 let authorText = document.getElementById('author')
 let twitterBtn = document.getElementById('twitter')
 let newQuoteBtn = document.getElementById('new-quote')
+let loader = document.getElementById('loader')
 
 let apiQuotes = []
 
@@ -23,6 +24,7 @@ function newQuote() {
 }
 
 async function getQuotes() {
+    loading()
     const url = 'https://type.fit/api/quotes'
     try {
         const response = await fetch(url)       
@@ -32,13 +34,25 @@ async function getQuotes() {
     } catch(error) {
         console.log(error)
     }
+    complete()
 }
 
 // Tweet Quote 
 function  tweetQuote() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`
     window.open(twitterUrl, '_blank')
+}
+
+// loading 
+function loading() {
+    quoteContainer.hidden = true
+    loader.hidden = false
 } 
+
+function complete() {
+    quoteContainer.hidden = false
+    loader.hidden = true
+}
 // event listener
 newQuoteBtn.addEventListener('click', getQuotes)
 twitterBtn.addEventListener('click', tweetQuote)
