@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JS_projects</title>
-    <link rel="icon" sizes="180x180" href="favicon_io/apple-touch-icon.png"> 
+    <link rel="icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/infinityScroll.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     
 </head>
 <body>
@@ -25,6 +27,21 @@
         </ul>
     </nav>
     
+    <h1>Unlimited photos you can see</h1>
+
+    <!-- loading -->
+    <div id="loader" class='loader'>
+        <img src="./assets/Vanilla-1s-280px.svg" alt='loading'>
+    </div>
+    <!-- image container -->
+    <div id='image-container' class='image-container'>
+        <img src="https://images.unsplash.com/photo-1653184849936-f64ad1081f96?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774" alt='koala'>
+        <img src="https://images.unsplash.com/photo-1652538893053-fe348c9a9440?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740" alt='leaves'>   
+        <img src="https://images.unsplash.com/photo-1653427472957-b3b3f313d719?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670" alt='leaves'>      
+    </div>
+
+
+    <script type="text/javascript" src="js/InfinityScroll.js"></script>
     
 </body>
 </html>
