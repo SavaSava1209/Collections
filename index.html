@@ -6,30 +6,46 @@
     <title>JS_projects</title>
     <link rel="icon" sizes="180x180" href="favicon_io/apple-touch-icon.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
     
 </head>
 <body>
-    <div class="quote-container" id='quote-container'>
-        <!-- quote -->
-        <div class="quote-text">
-            <i class="fa-solid fa-quote-left"></i>
-            <span class="quote" id='quote'>Practice makes perfection</span>
+    <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./InfinityScroll.html">Infinity Scroll</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="quote-container" id='quote-container'>
+            <!-- quote -->
+            <div class="quote-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <span class="quote" id='quote'>Practice makes perfection</span>
+            </div>
+            <!-- author -->
+            <div class="quote-author">
+                <span id="author">Hannah</span>
+            </div>
+            <!-- buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id='twitter' title="Tweet this">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+                <button id="new-quote">New quote</button>
+            </div>
         </div>
-        <!-- author -->
-        <div class="quote-author">
-            <span id="author">Hannah</span>
-        </div>
-        <!-- buttons -->
-        <div class="button-container">
-            <button class="twitter-button" id='twitter' title="Tweet this">
-                <i class="fa-brands fa-twitter"></i>
-            </button>
-            <button id="new-quote">New quote</button>
-        </div>
-       
     </div>
-    
     <div id='loader' class='loader'></div>
     <script type="text/javascript" src="script.js"></script>
 </body>
