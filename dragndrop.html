@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS_projects</title>
+    <link rel="icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./InfinityScroll.html">Infinity Scroll</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+    <h1>Board</h1>
+    <div class='drap-container'>
+        <ul class="drag-list">
+            <li class='drag-column backlog-column'>
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <div class="backlog-content"></div>
+                <ul class="drag-item-list" id="backlog-list ">
+                    <li class="drag-item">testing</li>
+                    <li class="drag-item">testing</li>
+                    <li class="drag-item">testing</li>
+                </ul>
+            </li>
+        </ul>
+       
+    </div>
+    
+   
+    <div id='loader' class='loader'></div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
