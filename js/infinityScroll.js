@@ -8,7 +8,6 @@ async function getPhotos() {
     try{
         const response = await fetch(url)
         photosArray = await response.json()
-        console.log(photosArray)
         displayPhotos()
         
     } catch(error) {
@@ -45,5 +44,12 @@ function setAttributes(element, attributes) {
         element.setAttribute(key, attributes[key])
     }
 }
+
+// keep loading more photos if scroll to the bottom
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+        getPhotos()
+    }
+})
 
 getPhotos()
