@@ -2,7 +2,7 @@ const imageContainer = document.getElementById('image-container')
 const loader = document.getElementById('loader')
 // const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
 let initialCount = 5
-const apiKey = 'lT9iqjYzUX0M51lftI9hgOsCPtpPDmV2T2I9SzLGhJk'
+const apiKey = ''
 let url = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initialCount}`
 let photosArray = []
 let ready = false
